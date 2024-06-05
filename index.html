@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABRACE</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <section class="dialogo">
+    <div class="overlay" id="overlay">
+      <div class="prompt-box">
+          <button class="close-btn" onclick="closePrompt()">&times;</button>
+          <h2>Como encontrar um sentido para a sua vida?</h2>
+          <p>Inscreva-se na Abrace</p>
+          <input type="text" id="nome" placeholder="Nome">
+          <input type="email" id="email" placeholder="Email">
+          <input type="tel" id="telefone" placeholder="Telefone">
+          <button onclick="submitForm()">Enviar</button>
+      </div>
+  </div>
+</section>
+<script>
+      function submitForm() {
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+
+            if (nome && email && telefone) {
+                console.log('Nome:', nome);
+                console.log('Email:', email);
+                console.log('Telefone:', telefone);
+                closePrompt();
+                // Aqui você pode enviar os dados para um servidor ou fazer outra ação
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        }
+
+        function closePrompt() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        // Exibe o prompt ao carregar a página
+        window.onload = function() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+</script>
+    <body>
+        <header id="inicial"> 
+          <img src="imagens/LOGO-RESPONSEVE.png" alt="logo">
+          <div class="menu">
+            <span class="nav-link" data-target="#inicial">INICIO</span>
+             <span class="nav-link" data-target="#sobree">SOBRE</span>
+             <span class="nav-link" data-target="#modalidade">ONLINE</span>
+             <span class="nav-link" data-target="#presenciale">PRESENCIAL</span> 
+
+                <script>
+              document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - document.querySelector('.menu').offsetHeight,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+                </script>
+             
+          </div>
+          <div class="redes-sociais">
+                  <img src="imagens/incons/instagram.png" alt="instagram">
+                  <img src="imagens/incons/whatsapp.png" alt="whatsapp">
+          </div>   
+        </header>
+        <section class="cabecalho">
+        <div class="conteudo-cabecalho">
+          <span>
+              SEJA BEM-VINDO
+          </span>
+          <H1>
+              ABRACE SAUDE MENTAL <br> & LONGEVIDADE
+          </H1>
+    
+          <P>Um Farol de esperança em Tempos de Adversidade!</P>
+          <a href="https://wa.me/5521983827644"><BUTTON>Quero entrar em contato<img src="imagens/incons/whatsapp.png" alt=""></BUTTON></a>
+        </div>
+         
+          </section>
+        <main>
+          <div class="video-cabecalho" >
+            <video class="video" id="headerVideo" autoplay muted loop playsinline>
+              <source src="imagens/atualizacao-video.mp4" type="video/mp4">
+             
+                 </div>
+                 <div class="play">
+                  <button id="soundButton">Ativar som</button>
+                  <script>
+                    document.getElementById('soundButton').addEventListener('click', function() {
+                        var video = document.getElementById('headerVideo');
+                        if (video.muted) {
+                            video.muted = false;
+                            this.textContent = 'Desativar Som';
+                        } else {
+                            video.muted = true;
+                            this.textContent = 'Ativar Som';
+                        }
+                    });
+                
+                    // Tentar reproduzir o vídeo automaticamente
+                    window.addEventListener('load', function() {
+                        var video = document.getElementById('headerVideo');
+                        video.play().catch(function(error) {
+                            console.log('Reprodução automática bloqueada:', error);
+                        });
+                    });
+                </script>
+                    
+                </div>
+                
+          
+        
+<!-- aqui se inicia o conteudo da pagina -->
+<div class="blocos">
+  <h2>Vantagens em fazer terapia com a ABRACE</h2>
+    <div class="blocos-de-vantagem">
+      <div class="vantagem-1">
+        <h3>Cabe no seu orçamento</h3>
+        <p>Aqui você consegue cuidar da sua saúde mental com um custo beneficio que não atrapalha seu orçamento.</p>
+      </div>
+      <div class="vantagem-2">
+        <h3>Profissionais qualificados</h3>
+        <p>Profissionais capacitados e treinados para exercer um atendimento de excelência.</p>
+      </div>
+      <div class="vantagem-1">
+        <h3>Sigílo Garantido</h3>
+        <p> tudo que é falado em terapia, fica entre você e seu terapeuta.</p>
+      </div>
+    </div>
+  <h2>Como a terapia pode te ajudar:</h2>
+    <div class="ajuda-vantagem">
+      <div class="vantagem-2">
+        <h3>Ansiedade</h3>
+        <p>A angustia de viver na pressa dos dias de hoje não permite aproveitar o melhor da vida.</p>
+      </div>
+      <div class="vantagem-1">
+        <h3>Depressão</h3>
+        <P>Aprenda a melhorar a qualidade do seu dia e volte a enxergar a cor da vida.</P>
+      </div>
+      <div class="vantagem-2">
+        <h3>Relacionamentos</h3>
+        <p>Quebre padrões ruins, melhore a sua comunicação e viva relacionamentos leves e duradouros.</p>
+      </div>
+      
+    </div>
+
+</div>
+
+          <div class="psicologia-positiva">
+            <span>
+                A psicologia clinica e Psicoterapia bem como a medicina de estilo de vida tem como proposta melhorar a qualidade e virtudes que nos permitem prosperar, incentivando a resiliência e a felicidade.
+            </span>
+          </div>
+        <div class="container-caracteres">
+            <div>
+                <img src="imagens/atualizacao1.jpeg" alt="imagem de psicologia">
+            </div>
+            <div>
+                <img src="imagens/atualizacao3.jpeg" alt="imagem de psicologia">
+            </div>
+            <div>
+                <img src="imagens/atualizacao2.jpeg" alt="imagem de psicologia">
+            </div>
+        </div>
+
+<div class="atendimento" id="modalidade">
+  <div class="modalidade">
+    <p>MODALIDADES DE ATENDIMENTO</p>
+    <H3>Conheça sobre nossas opçōes de atendimento</H3>
+    <p>Terapia com periodos de 30 e 60 min, você escolhe a que melhor cabe para você.</p>
+    <div class="botoes">
+        <button>Terapia Online</button>
+        <button>Terapia presencial</button>
+    </div>
+  </div>
+  <div class="online-presencial">
+    <div class="online">
+        <img src="imagens/incons/local.png" alt="local">
+        <h4>Presencial</h4>
+        <p>Modalidade classica de atendimento da psicologia.</p>
+    </div>
+    <div class="presencial">
+      <img src="imagens/incons/phone.png" alt="phone">
+      <h4>Online</h4>
+      <p>Atendimento online com menor custo benefício, onde você quiser e puder.</p>
+  </div>
+  </div>
+</div>
+<!-- direcao Luzia felicio -->
+<section class="about-creator">
+  <div class="container">
+      <div class="image">
+          <img src="imagens/psicologa Luzia.jpeg" alt="Foto do Idealizador">
+      </div>
+      <div class="text">
+          <h2>Luzia Felício</h2>
+          <p> CRP: 05/22636</p>
+          <p>Presidente e Coordenadora do projeto Abrace Saúde Mental e Longevidade Psicóloga Clínica formada há 30 anos pelo UFRJ
+            Pós Graduada em Estimulação Precoce e Hipnoterapia Médica Sua abordagem clínica integra da Psicologia , homeopatia , Hipnose e muitas outras ferramentas que ganham vida de acordo com a necessidade de cada paciente.</p>
+          <a href="https://www.doctoralia.com.br/luzia-felicio/psicologo/rio-de-janeiro" class="button">Saiba mais</a>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- time de profissionais -->
+<section class="team" id="presenciale"> 
+  <h2>Nossa Equipe</h2>
+  <div class="team-container">
+    <div class="team-member" id="luzia" onmouseenter="entre()" onmousemove="entre()" onmouseout="saiu()">
+      <img src="imagens/psicologa_Luzia.jpeg" alt="Foto do Profissional 2">
+      <h3>Luzia Felicio</h3>
+      <p>Presidente e Coordenadora</p>
+      <script>
+          function entre() {
+              var luzia = document.getElementById('luzia');
+              var pa = luzia.querySelector('p');
+              pa.textContent = 'Luzia Felicio é uma psicóloga experiente, formada há 30 anos pela Universidade Federal do Rio de Janeiro, com pós-graduações em Estimulação Precoce, Hipnoterapia e Medicina. Reconhecida por sua empatia e dedicação, Luzia utiliza técnicas tradicionais e inovadoras para oferecer tratamentos personalizados que ajudam seus clientes a superar desafios emocionais e alcançar uma vida equilibrada. Sua expertise em hipnoterapia e estimulação precoce destaca-se, promovendo mudanças significativas e duradouras.';
+          }
+  
+          function saiu() {
+              var luzia = document.getElementById('luzia');
+              var pa = luzia.querySelector('p');
+              pa.textContent = 'Presidente e Coordenadora';
+          }
+      </script>
+  </div>
+  
+  <div class="team-member" id="sandra" onmouseenter="acesso()" onmousemove="acesso()" onmouseout="sair()">
+      <img src="imagens/profissionais/Sandra.jpeg" alt="Foto do Profissional 1">
+      <h3>Sandra Nogueira</h3>
+      <p>Diretora do projeto Abrace Saude Mental</p>
+      <script>
+          function acesso() {
+              var sandra = document.getElementById('sandra');
+              var pa = sandra.querySelector('p');
+              pa.textContent = 'Com vasta experiência na área de saúde mental, ela dedica-se ao apoio emocional e psicológico de seus pacientes. No projeto Abrace, Sandra lidera uma equipe multidisciplinar, promovendo iniciativas que visam a melhoria da qualidade de vida e bem-estar dos jovens atendidos. Sua abordagem é marcada pela empatia, competência técnica e compromisso com o desenvolvimento humano integral.';
+          }
+  
+          function sair() {
+              var sandra = document.getElementById('sandra');
+              var pa = sandra.querySelector('p');
+              pa.textContent = 'Diretora do projeto Abrace Saude Mental';
+          }
+      </script>
+  </div>
+  
+    
+      <div class="team-member" id="fernanda" onmouseenter="entrei()" onmousemove="entrei()" onmouseout="fui()">
+        <img src="imagens/profissionais/medica.jpeg" alt="Foto do Profissional 3">
+        <h3>Dra Fabiana de Marsillac</h3>
+        <p>Médica Clinica</p>
+    </div>
+    
+    <script>
+    function entrei() {
+        var fernanda = document.querySelector('div#fernanda');
+        var p = fernanda.querySelector('p');
+        p.textContent = 'Dra. Fabiana de Marcilaki é uma médica clínica especializada em medicina baseada em evidências e estudos de vida, focada no bem-estar, longevidade e prevenção de doenças crônicas. Com uma abordagem holística e centrada no paciente, ela promove hábitos de vida saudáveis e intervenções precoces, oferecendo cuidados personalizados para ajudar seus pacientes a viverem vidas mais equilibradas e saudáveis.';
+    }
+    
+    function fui() {
+        var fernanda = document.querySelector('div#fernanda');
+        var p = fernanda.querySelector('p');
+        p.textContent = 'Médica Clinica';
+    }
+    </script>
+    
+  </div>      
+  </div>
+
+<!-- slides -->
+
+<div class="slider">
+  <h2>Nossos momentos</h2>
+  <div class="slides">
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.00 (4).jpeg" alt="Imagem 1"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.00.jpeg" alt="Imagem 2"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.01 (1).jpeg" alt="Imagem 3"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.01 (2).jpeg" alt="Imagem 4"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.01 (3).jpeg" alt="Imagem 5"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.01 (4).jpeg" alt="Imagem 6"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.01.jpeg" alt="Imagem 7"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.02 (1).jpeg" alt="Imagem 8"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.02 (2).jpeg" alt="Imagem 9"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.02 (3).jpeg" alt="Imagem 10"></div>
+      <div class="slide"><img src="imagens/slides/WhatsApp Image 2024-05-16 at 22.05.02 (3).jpeg" alt="Imagem 11"></div>
+ </div>
+</div>
+
+
+
+<section class="section4">
+            <div class="correcao">
+            <div class="iphone">
+              <div class="tela">
+                  <video controls>
+                      <source src="celular/celular.mp4" type="video/mp4">
+                      Seu navegador não suporta o elemento de vídeo.
+                  </video>
+              </div>
+                    <div class="camera"></div>
+                    <div class="alto-falante"></div>
+                    <div class="botao"></div>
+          </div>
+          <article>
+            <h2>Quero acompanhar nas redes sociais</h2>
+            <span>click e confira</span>
+            <div class="funcoes">
+                    <button onclick="changeVideo('celular/sejabemvindo.mp4')">CONHEÇA</button> <button onclick="changeVideo('celular/clientes.mp4')">CLIENTES</button><button onclick="changeVideo('celular/proposito.mp4')">PROPOSTA</button>
+            </div>
+            <div class="funcoes">
+           <button onclick="changeVideo('imagens/estagios.mp4')">ESTAGIARIOS</button>
+            </div>
+            <div class="assets">
+                    <span>Estas são algumas das propostas que vamos dar suporte para o individuo.</span>
+                    <button>Quero viver mais leve</button>
+            </div>
+            <script>
+              function changeVideo(source) {
+                var videoPlayer = document.querySelector('.tela video');
+                  videoPlayer.src = source;
+                  videoPlayer.play();
+              }
+          </script>
+          </article>
+          </section> 
+        </div>
+        <section class="testemunhos">
+          <div class="slideshow-container">
+            <div class="testimonial-slides">
+                <img src="testemunhos/test1.jpeg" alt="Testimonial 1">
+            </div>
+            <div class="testimonial-slides">
+                <img src="testemunhos/test2.jpeg" alt="Testimonial 2">
+            </div>
+            <div class="testimonial-slides">
+                <img src="testemunhos/test3.jpeg" alt="Testimonial 3">
+            </div>
+            <div class="testimonial-slides">
+                <img src="testemunhos/test4.jpeg" alt="Testimonial 4">
+            </div>
+            <div class="testimonial-slides">
+                <img src="testemunhos/test5.jpeg" alt="Testimonial 5">
+            </div>
+            <div class="testimonial-slides">
+                <img src="testemunhos/test6.jpeg" alt="Testimonial 6">
+            </div>
+            <div class="testimonial-slides">
+              <img src="testemunhos/test7.jpeg" alt="Testimonial 7">
+            </div>
+            <div class="testimonial-slides">
+                <img src="testemunhos/test8.jpeg" alt="Testimonial 8">
+            </div>
+            <div class="testimonial-slides">
+                <img src="testemunhos/test9.jpeg" alt="Testimonial 9">
+            </div>
+            <div class="testimonial-slides">
+                <img src="testemunhos/test10.jpeg" alt="Testimonial 10">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <script>
+            var slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("testimonial-slides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+        
+            function plusSlides(n) {
+                slideIndex += n - 1;
+                var slides = document.getElementsByClassName("testimonial-slides");
+                if (slideIndex >= slides.length) { slideIndex = 0 }
+                if (slideIndex < 0) { slideIndex = slides.length - 1 }
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex].style.display = "block";
+            }
+        </script>
+        </section>
+          
+        <div class="container-cuidado">
+          <img src="imagens/Group 9cuidado.png" alt="">
+        </div>
+
+        <section class="comunidade">
+          
+          <h2>O que você vai encontrar:</h2>
+          <img src="imagens/ARTE-ABRACE.png" alt="">
+        </section>
+        
+
+        <section class="section1"  id="sobree">    
+          <div>
+<video id="meuvideo" autoplay muted loop playsinline><source src="imagens/WhatsApp Video 2024-05-15 at 02.37.30.mp4" type="video/mp4">
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var video = document.getElementById('meuvideo');
+                video.playbackRate = 0.5; // Define a velocidade de reprodução para 0.5x (câmera lenta)
+            });
+        </script>
+      <div class="description1">
+        <h2>Nossa historia</h2>
+      <span>A Abrace emerge como um farol de esperança em meio às adversidades da pandemia. Sua fundação, em 2020, foi marcada por uma missão nobre: proporcionar suporte integral aos mais necessitados. Nesses tempos difíceis, a ênfase nos atendimentos online tornou-se crucial, permitindo que pessoas de todas as partes encontrassem apoio emocional e psicológico sem sair de casa.
+
+        A mente visionária por trás dessa iniciativa é a renomada Psicóloga Clínica Luzia Felício, cuja jornada de 30 anos de dedicação à profissão a conduziu a uma expertise incomparável. Graduada pela UFRJ e especializada em Hipnose Médica e técnicas comportamentais avançadas, Luzia Felício personifica a compaixão e o comprometimento em auxiliar cada indivíduo em sua jornada de cura e autodescoberta.
+        
+        Assim, a Abrace não é apenas uma organização; é um refúgio, um lugar onde a empatia e o cuidado são tecidos em cada interação. Seu legado transcende o presente, deixando um impacto duradouro naqueles que encontram conforto em suas palavras e orientações, guiando-os rumo a uma vida mais plena e significativa.
+        
+        Hoje, a Abrace vem sendo reconhecida como um dos melhores polos de atendimento do Brasil. Sua rede é fortalecida por uma integralidade de especialidades, tais como Psicologia, Psicoterapia, Medicina do Estilo de Vida, Fisioterapia e Nutrição. Os parceiros e conveniados são SSPF, ANSEF, entre outros.
+        
+        É importante ressaltar que a Abrace hoje tem sua Clínica de Saúde Mental e Longevidade, além de um projeto de assistência social para pessoas de baixa renda. Também criamos um centro para atendimentos e assistências aos necessitados do Rio Grande do Sul.</span>
+  </div>
+</section>
+
+
+<!-- copia do outro site -->
+<footer>
+<div class="faq">
+  <h2>Duvidas Frequentes</h2>
+  <ul>
+      <li>
+          <h2>Quem Somos?</h2>
+          <p> Hoje, a Abrace vem sendo reconhecida como um dos melhores polos de atendimento do Brasil. Sua rede é fortalecida por uma integralidade de especialidades, tais como Psicologia, Psicoterapia, Medicina do Estilo de Vida, Fisioterapia e Nutrição.<br>
+            resposta original.</p>
+      </li>
+      <li>
+          <h2>Por que?</h2>
+          <p> A Abrace é reconhecida como um dos melhores polos de atendimento no Brasil pela abordagem multidisciplinar, profissionais qualificados, inovação, cuidado centrado no paciente, ambiente acolhedor e promoção da saúde. <br>
+            resposta original.</p>
+      </li>
+  </ul>
+</div>
+<div>
+<span>ainda precisa de ajuda? entre em contato pelo whatsapp.</span>
+<button>whatsapp</button>
+</div>
+</section>
+<footer>
+<span>© 2024 Luzia Felicio Todos os direitos reservados.</span>
+<div>
+  <img src="imagens/inst.SVG" alt="instagram @abracesaudemental ">
+  <Span>contato@abracelongevidade.com.br</Span>
+  <span> (21) 9 8382-7644</span>
+</div>
+
+</footer>
+        </main>
+    </body>
+</html>
