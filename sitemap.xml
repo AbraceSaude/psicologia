@@ -11,7 +11,7 @@
 
     <!-- Exemplo de URL de uma página -->
     <url>
-        <loc>http://www.abracesaudemental.com.br/sobre</loc>
+        <loc>https://abracesaudemental.com.br/#:~:text=INICIO-,SOBRE,-ONLINE</loc>
         <lastmod>2024-06-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -19,7 +19,7 @@
 
     <!-- Exemplo de URL de outra página -->
     <url>
-        <loc>http://www.abracesaudemental.com.br/servicos</loc>
+        <loc>https://abracesaudemental.com.br/#:~:text=SOBRE-,ONLINE,-PRESENCIAL</loc>
         <lastmod>2024-06-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
