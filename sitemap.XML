@@ -25,14 +25,6 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Exemplo de URL de um artigo do blog -->
-    <url>
-        <loc>http://www.abracesaudemental.com.br/blog/post-exemplo</loc>
-        <lastmod>2024-06-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
     <!-- Adicione mais URLs conforme necessário -->
 
 </urlset>
