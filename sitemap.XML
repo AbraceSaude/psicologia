@@ -1,60 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Home Page -->
-  <url>
-    <loc>http://www.abrace.com.br/</loc>
-    <lastmod>2024-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- About Page -->
-  <url>
-    <loc>http://www.abrace.com.br/sobre</loc>
-    <lastmod>2024-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Services Page -->
-  <url>
-    <loc>http://www.abrace.com.br/servicos</loc>
-    <lastmod>2024-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Contact Page -->
-  <url>
-    <loc>http://www.abrace.com.br/contato</loc>
-    <lastmod>2024-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Example Additional Pages -->
-  <url>
-    <loc>http://www.abrace.com.br/blog</loc>
-    <lastmod>2024-06-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.abrace.com.br/blog/artigo1</loc>
-    <lastmod>2024-06-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.abrace.com.br/blog/artigo2</loc>
-    <lastmod>2024-06-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
 
-  <!-- Add more URLs as needed -->
+    <!-- URL do índice ou homepage -->
+    <url>
+        <loc>http://www.abracesaudemental.com.br/</loc>
+        <lastmod>2024-06-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Exemplo de URL de uma página -->
+    <url>
+        <loc>http://www.abracesaudemental.com.br/sobre</loc>
+        <lastmod>2024-06-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Exemplo de URL de outra página -->
+    <url>
+        <loc>http://www.abracesaudemental.com.br/servicos</loc>
+        <lastmod>2024-06-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Exemplo de URL de um artigo do blog -->
+    <url>
+        <loc>http://www.abracesaudemental.com.br/blog/post-exemplo</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Adicione mais URLs conforme necessário -->
 
 </urlset>
