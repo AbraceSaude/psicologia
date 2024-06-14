@@ -7,4 +7,4 @@ Disallow: /private/
 Allow: /
 
 # Especificar a localização do sitemap
-Sitemap: http://www.abrace.com.br/sitemap.xml
+Sitemap: http://www.abracesaudemental.com.br/sitemap.xml
