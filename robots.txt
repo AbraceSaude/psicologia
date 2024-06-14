@@ -1,0 +1,10 @@
+# Bloquear todos os motores de busca de acessar áreas específicas do site
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+
+# Permitir acesso a todas as outras áreas
+Allow: /
+
+# Especificar a localização do sitemap
+Sitemap: http://www.abrace.com.br/sitemap.xml
